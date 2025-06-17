@@ -1,0 +1,27 @@
+# Created at 2025-06-16T18:09:57.665
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Downloading Chromium 123.0.6312.4 (playwright build v1105)[2m from https://playwright.azureedge.net/builds/chromium/1105/chromium-mac.zip[22m'.
+
+# Created at 2025-06-16T18:10:58.543
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Downloading Chromium 123.0.6312.4 (playwright build v1105)[2m from https://playwright-akamai.azureedge.net/builds/chromium/1105/chromium-mac.zip[22m'.
+
+# Created at 2025-06-16T18:11:58.997
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Downloading Chromium 123.0.6312.4 (playwright build v1105)[2m from https://playwright-verizon.azureedge.net/builds/chromium/1105/chromium-mac.zip[22m'.
+
+# Created at 2025-06-16T18:11:59.000
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Failed to install browsers'.
+
+# Created at 2025-06-16T18:11:59.002
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Error: Failed to download Chromium 123.0.6312.4 (playwright build v1105), caused by'.
+
+# Created at 2025-06-16T18:11:59.002
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Error: Download failure, code=1'.
+
+# Created at 2025-06-16T18:11:59.004
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '    at ChildProcess.<anonymous> (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-544592598296592915/package/lib/server/registry/browserFetcher.js:91:16)'.
+
+# Created at 2025-06-16T18:11:59.006
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '    at ChildProcess.emit (node:events:518:28)'.
+
+# Created at 2025-06-16T18:11:59.044
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '    at ChildProcess._handle.onexit (node:internal/child_process:294:12)'.
+

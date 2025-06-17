@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-17T14:28:57 BST" name="Surefire suite" finished-at="2025-06-17T14:30:10 BST" duration-ms="73187">
+    <groups>
+    </groups>
+    <test started-at="2025-06-17T14:28:57 BST" name="Surefire test" finished-at="2025-06-17T14:30:10 BST" duration-ms="73187">
+      <class name="tests.BrightHrTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BrightHrTest@71623278]" started-at="2025-06-17T14:28:57 BST" name="setup" finished-at="2025-06-17T14:29:02 BST" duration-ms="5109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:1, instance:tests.BrightHrTest@71623278]" started-at="2025-06-17T14:29:02 BST" name="testLogin" finished-at="2025-06-17T14:29:10 BST" duration-ms="7682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testAddEmployees()[pri:2, instance:tests.BrightHrTest@71623278]" started-at="2025-06-17T14:29:10 BST" name="testAddEmployees" finished-at="2025-06-17T14:29:40 BST" duration-ms="30008" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/progress.js:78:26)
+    at Frame.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/frames.js:996:23)
+    at FrameDispatcher.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:365:39)
+}
+Call log:
+- waiting for locator("[data-tab='employees']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/progress.js:78:26)
+    at Frame.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/frames.js:996:23)
+    at FrameDispatcher.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:365:39)
+}
+Call log:
+- waiting for locator("[data-tab='employees']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.PageImpl.lambda$click$18(PageImpl.java:620)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:619)
+at com.microsoft.playwright.Page.click(Page.java:3801)
+at pages.EmployeePage.goToEmployeeTab(EmployeePage.java:18)
+at tests.BrightHrTest.testAddEmployees(BrightHrTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/progress.js:78:26)
+    at Frame.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/frames.js:996:23)
+    at FrameDispatcher.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:365:39)
+}
+Call log:
+- waiting for locator("[data-tab='employees']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddEmployees -->
+        <test-method signature="testVerifyEmployees()[pri:3, instance:tests.BrightHrTest@71623278]" started-at="2025-06-17T14:29:40 BST" name="testVerifyEmployees" finished-at="2025-06-17T14:30:10 BST" duration-ms="30018" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/progress.js:78:26)
+    at Frame.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/frames.js:996:23)
+    at FrameDispatcher.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:365:39)
+}
+Call log:
+- waiting for locator("[data-tab='employees']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/progress.js:78:26)
+    at Frame.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/frames.js:996:23)
+    at FrameDispatcher.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:365:39)
+}
+Call log:
+- waiting for locator("[data-tab='employees']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.PageImpl.lambda$click$18(PageImpl.java:620)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:619)
+at com.microsoft.playwright.Page.click(Page.java:3801)
+at pages.EmployeePage.goToEmployeeTab(EmployeePage.java:18)
+at tests.BrightHrTest.testVerifyEmployees(BrightHrTest.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/progress.js:78:26)
+    at Frame.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/frames.js:996:23)
+    at FrameDispatcher.click (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/05/hxtcj21x1ks01xktcq0nwfs40000gn/T/playwright-java-4538967985815362162/package/lib/server/dispatchers/dispatcher.js:365:39)
+}
+Call log:
+- waiting for locator("[data-tab='employees']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyEmployees -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BrightHrTest@71623278]" started-at="2025-06-17T14:30:10 BST" name="tearDown" finished-at="2025-06-17T14:30:10 BST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.BrightHrTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
